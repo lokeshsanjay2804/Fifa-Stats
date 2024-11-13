@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0; 
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #010000; 
+    padding: 25px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid #6a0dad; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6a0dad; 
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./FOOTBALL\ IMAGE.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px 60px;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ffffff; 
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6a0dad; 
+    color: #fff; 
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #4b0082;
+}
+
+.hero-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.highlight-item {
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 1rem;
+    border-radius: 8px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.highlight-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-item p {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .hero-highlights {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.content-section {
+    background-color: #8a2be2; 
+    padding: 40px 20px;
+    margin: 80px 20px 20px; 
+    border-radius: 10px;
+    color: #ffffff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content-section h2 {
+    font-size: 2em;
+    color: #f4f4f4; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-section h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+.content-section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.content-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.content-section li {
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f4f4f4; 
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #4b0082;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #3b005d; 
+    outline: none;
+}
+
+form button {
+    padding: 12px;
+    background-color: #6a0dad; 
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #4b0082; 
+}
+
+footer {
+    background-color: #000000; 
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 2px solid #6a0dad; 
+    font-size: 0.8rem;
+    width: 100%;
+    position: relative; 
+    bottom: 0;
+}
+
+a {
+    color: #6a0dad;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #4b0082; 
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        margin: 20px; 
+    }
+}
